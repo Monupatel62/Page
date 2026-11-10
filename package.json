@@ -19,9 +19,10 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
+    "katex": "^0.18.2",
     "lucide-react": "^0.468.0",
-    "next": "^16.1.6",
-    "next-mdx-remote": "^5.0.0",
+    "next": "16.4.5",
+    "next-mdx-remote": "6.0.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "rehype-autolink-headings": "^7.1.0",
@@ -38,11 +39,17 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "eslint": "^9.0.0",
-    "eslint-config-next": "^16.1.6",
+    "eslint-config-next": "16.4.5",
     "tailwindcss": "^4.2.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "@types/mdx": "^2.0.13",
     "@eslint/eslintrc": "^3.2.0"
+  },
+  "overrides": {
+    "katex": "^0.18.2",
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "^11.0.5"
+    }
   }
 }
