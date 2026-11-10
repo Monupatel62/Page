@@ -1,6 +1,6 @@
 # Content authoring guide
 
-All public content is stored in Git as MDX. There is deliberately no CMS, login, upload form, public write API, or database. A maintainer adds or updates files, reviews the change, and merges it.
+All public content is stored in Git as MDX. There is deliberately no CMS, login, upload form, public write API, or database. A maintainer adds or updates files, reviews the change, and merges it. Treat MDX as trusted source code: only repository maintainers may write it. The renderer blocks dangerous JavaScript patterns as a defence-in-depth measure, but this is not a sandbox for untrusted uploads.
 
 ## Add an article
 Create a lowercase kebab-case file in `content/posts/`. Its filename becomes the URL slug.
